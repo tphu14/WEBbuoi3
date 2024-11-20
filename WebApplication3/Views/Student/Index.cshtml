@@ -1,0 +1,27 @@
+﻿@using (Html.BeginForm("ShowKQ", "Student", FormMethod.Post))
+{
+    <h2>Dang ky chuyen nganh</h2>
+    <label for="MSSV">MSSV:</label>
+    <input type="text" id="MSSV" name="MSSV" />
+    <br />
+
+    <label for="HoTen">Ho ten:</label>
+    <input type="text" id="HoTen" name="HoTen" />
+    <br />
+
+    <label for="DiemTB">Diem trung binh:</label>
+    <input type="number" id="DiemTB" name="DiemTB" step="0.01" />
+    <br />
+
+    <label for="ChuyenNganh"> Chuyen nganh:</label>
+    <select id="ChuyenNganh" name="ChuyenNganh">
+        <option value="CNPM">CNPM</option>
+        <option value="HTTT">HTTT</option>
+        <option value="ANM">ANM</option>
+        <option value="TTNT">TTNT</option>
+        <option value="MMT">MMT</option>
+    </select>
+    <br />
+
+    <button type="submit">Dang Ky</button>
+}
